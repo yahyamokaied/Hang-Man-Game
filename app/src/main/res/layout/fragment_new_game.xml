@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NewGameFragment">
+
+    <ImageView
+        android:id="@+id/menu_view"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/menu"
+        android:onClick="showmenu"/>
+
+
+
+
+    <Button
+        style="@style/btnStyle"
+        android:layout_centerInParent="true"
+        android:id="@+id/guess_new_word_btn"
+        android:layout_below="@+id/menu_view"
+        android:text="@string/guess_new_word_btn" />
+
+    <ImageView
+        android:gravity="center"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/guess_new_word_btn"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/hangman" />
+
+    <TextView
+        style="@style/textViewBoldStyle"
+        android:gravity="center"
+        android:id="@+id/myWord"
+        android:layout_below="@+id/imageView"
+        android:text="@string/my_word" />
+
+    <TextView
+        style="@style/textViewBoldStyle"
+        android:gravity="center"
+        android:id="@+id/how_many_tries"
+        android:layout_below="@+id/myWord"
+        android:text="@string/how_many_tries" />
+
+    <EditText
+        style="@style/textEdit"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:id="@+id/text_input"
+        android:layout_below="@+id/how_many_tries"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"
+        android:hint="@string/text_hint" />
+
+    <Button
+        style="@style/btnStyle"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:id="@+id/try_btn"
+        android:layout_below="@+id/text_input"
+        android:text="@string/try_btn" />
+
+
+
+</RelativeLayout>

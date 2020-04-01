@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HangMan</string>
+    <string name="the_word">Hang Man by: YAHYA MOKAIED</string>
+    <string name="my_word">Guees The Word .. Country of The World</string>
+    <string name="how_many_tries">X X X X X X</string>
+    <string name="text_input" />
+    <string name="text_hint">Enter One Letter</string>
+    <string name="try_btn">Try</string>
+
+    <string name="new_game_btn">New Game</string>
+    <string name="about_us_btn">About Us</string>
+    <string name="exit_btn">Exit</string>
+    <string name="guess_new_word_btn">Guess New Word</string>
+</resources>
